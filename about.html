@@ -14,6 +14,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Manrope:wght@600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
 <body>
+    <div class="modal" id="modal-registration">
+        <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-close">
+                <img src="images/close.svg"/>
+              </div>
+            </div>
+            <div class="modal-body">
+            <div class="modal-title">Регистрация</div>
+            <p>Уже есть аккаунт? <span class="modal-change" id="modalLogin">Войти</span></p>
+            <form class="modal__form">
+                    <input class="form__input" type="text" placeholder="Имя*"/>
+                    <input class="form__input"  type="email"   placeholder="E-mail*"/>
+                    <input class="form__input phone-input" type="text" placeholder="Телефон"/>
+                    <div class="input-password">
+                        <input class="form__input"  type="password" placeholder="Пароль"/>
+                        <img src="images/visible.svg"/>
+                    </div>
+                    
+                   
+                    <div class="checkboxes">
+                        <input type="checkbox" id="checkbox"/>
+                        <label for="checkbox">
+                            <div class="checkbox-mark">
+                                <img src="images/modal-tick.svg"/>
+                            </div>
+                            Согласие на обработку персональных данных
+                           
+                        </label>
+                   </div>
+                   <button class="form__btn" type="submit">Регистрация</button>
+            </form>
+            </div>
+          </div>
+    </div>
+    <div class="modal" id="modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-close">
+                <img src="images/close.svg"/>
+              </div>
+            </div>
+            <div class="modal-body">
+            <div class="modal-title">Вход</div>
+            <p>Уже есть аккаунт? <span class="modal-change" id="modalRegistration">Регистрация</span></p>
+            <form class="modal__form">
+                    <input class="form__input"  type="email"   placeholder="E-mail"/>
+                    <div class="input-password">
+                        <input class="form__input"  type="password" placeholder="Пароль"/>
+                        <img src="images/visible.svg"/>
+                    </div>
+                   <button class="form__btn" type="submit">Вход</button>
+            </form>
+            <div class="modal-change modal-reset" id="modalReset">Не помните пароль?</div>
+            </div>
+          </div>
+    </div>
+    <div class="modal" id="modal-reset">
+        <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-close">
+                <img src="images/close.svg"/>
+              </div>
+            </div>
+            <div class="modal-body">
+            <div class="modal-title">Восстановление пароля</div>
+            <p>Пожалуйста, введите email, указанный вами при регистрации. Вы получите ссылку для восстановления пароля</p>
+            <form class="modal__form">
+                    <input class="form__input"  type="email"   placeholder="E-mail"/>
+                    
+                   <button class="form__btn" type="submit">Сбросить пароль</button>
+            </form>
+            </div>
+          </div>
+    </div>
     <header class="header hAuto">
       
         <div class="header__top">
@@ -201,6 +276,7 @@
     </footer>
 
     <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>

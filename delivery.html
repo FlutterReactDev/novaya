@@ -14,6 +14,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Manrope:wght@600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
 <body>
+    <div class="modal" id="modal-registration">
+        <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-close">
+                <img src="images/close.svg"/>
+              </div>
+            </div>
+            <div class="modal-body">
+            <div class="modal-title">Регистрация</div>
+            <p>Уже есть аккаунт? <span class="modal-change" id="modalLogin">Войти</span></p>
+            <form class="modal__form">
+                    <input class="form__input" type="text" placeholder="Имя*"/>
+                    <input class="form__input"  type="email"   placeholder="E-mail*"/>
+                    <input class="form__input phone-input" type="text" placeholder="Телефон"/>
+                    <div class="input-password">
+                        <input class="form__input"  type="password" placeholder="Пароль"/>
+                        <img src="images/visible.svg"/>
+                    </div>
+                    
+                   
+                    <div class="checkboxes">
+                        <input type="checkbox" id="checkbox"/>
+                        <label for="checkbox">
+                            <div class="checkbox-mark">
+                                <img src="images/modal-tick.svg"/>
+                            </div>
+                            Согласие на обработку персональных данных
+                           
+                        </label>
+                   </div>
+                   <button class="form__btn" type="submit">Регистрация</button>
+            </form>
+            </div>
+          </div>
+    </div>
+    <div class="modal" id="modal-login">
+        <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-close">
+                <img src="images/close.svg"/>
+              </div>
+            </div>
+            <div class="modal-body">
+            <div class="modal-title">Вход</div>
+            <p>Уже есть аккаунт? <span class="modal-change" id="modalRegistration">Регистрация</span></p>
+            <form class="modal__form">
+                    <input class="form__input"  type="email"   placeholder="E-mail"/>
+                    <div class="input-password">
+                        <input class="form__input"  type="password" placeholder="Пароль"/>
+                        <img src="images/visible.svg"/>
+                    </div>
+                   <button class="form__btn" type="submit">Вход</button>
+            </form>
+            <div class="modal-change modal-reset" id="modalReset">Не помните пароль?</div>
+            </div>
+          </div>
+    </div>
+    <div class="modal" id="modal-reset">
+        <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-close">
+                <img src="images/close.svg"/>
+              </div>
+            </div>
+            <div class="modal-body">
+            <div class="modal-title">Восстановление пароля</div>
+            <p>Пожалуйста, введите email, указанный вами при регистрации. Вы получите ссылку для восстановления пароля</p>
+            <form class="modal__form">
+                    <input class="form__input"  type="email"   placeholder="E-mail"/>
+                    
+                   <button class="form__btn" type="submit">Сбросить пароль</button>
+            </form>
+            </div>
+          </div>
+    </div>
     <header class="header hAuto">
       
         <div class="header__top">
@@ -81,6 +156,68 @@
             <div class="delivery__title">
                 Доставка
             </div>
+
+            <div class="delivery__steps">
+                <div class="delivery__step">
+                    <div class="delivery__step-title">
+                        Оплата
+                    </div>
+                    <div class="delivery__step-text">
+                        После оформления вами заказа, в течении того же дня мы проверяем его наличие на складе и связываемся с вами по выбору оплаты вашего заказа
+                    </div>
+                </div>
+                <div class="delivery__step">
+                    <div class="delivery__step-title">
+                        Доставка
+                    </div>
+                    <div class="delivery__step-text">
+                        После получения оплаты мы отправим ваш заказ в течении 24 часов в рабочие дни по выбранному вами типу доставки
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery__ways">
+                <div class="delivery__ways-title">Способы доставки</div>
+                <div class="delivery__ways-inner">
+                    <div class="delivery__way">
+                        <header class="delivery__way-header">
+                            <div class="delivery__way-header-icon">
+                                <img src="images/delivery/russia-pochta.svg"/>
+                            </div>
+                            <div class="delivery__way-header-title">Почта России</div>
+                        </header>
+                        <ul class="delivery__way-advantages">
+                            <li>Бесплатно, при заказе от 10 000 ₽</li>
+                            <li>299 ₽ до ближайшего к вам отделения Почты России. Высылаем трек номер, ориентировочные сроки 4–6 дней в зависимости от региона доставки</li>
+                            <li>199 ₽ до ближайшего к Вам почтмата. Срок доставки 3-6 дней</li>
+                            <li>699 ₽ службой EMS до двери срок доставки 2-4 дня. Высылается трек номер</li>
+                    </ul>
+                    </div>
+                    <div class="delivery__way">
+                        <header class="delivery__way-header">
+                            <div class="delivery__way-header-icon">
+                                <img src="images/delivery/cdek.svg"/>
+                            </div>
+                            <div class="delivery__way-header-title">СДЭК</div>
+                        </header>
+
+                        <ul class="delivery__way-advantages">
+                                <li>Бесплатно, при заказе от 10 000 ₽</li>
+                                <li>299 ₽ до ближайшего к вам склада СДЭК. Высылается трек номер. Срок доставки 4-6 дней</li>
+                                <li>450 ₽ до двери. Высылается трек номер. рок доставки 4-6 дней</li>
+                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="map__img">
+                <img src="images/delivery/map.png"/>
+            </div>
+            <div class="map__text">
+                Если у вас есть свой предпочтительный способ доставки (другие<br/> Транспортные Компании, курьерские службы и т.д.) сообщите<br/> нам и мы доставим ваш заказ.
+            </div>
         </section>
     </main>
 
@@ -136,6 +273,7 @@
     </footer>
 
     <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
