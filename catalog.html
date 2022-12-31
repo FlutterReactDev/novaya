@@ -9,11 +9,8 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Manrope:wght@600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"> 
-<body>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Manrope:wght@400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet"><body>
     <div class="modal" id="modal-registration">
         <div class="modal-content">
             <div class="modal-header">
@@ -94,12 +91,16 @@
         <div class="header__top">
             <div class="header__inner">
                 <div class="header__top-nav">
-                    <div></div>
+                    <div class="header__hamburger">
+                        <span>
+                            <img src="images/main/hamburger.svg"/>
+                        </span>
+                    </div>
                     <a href="/" class="header__logo">
                         <img src="images/main/logo.svg"/>
                     </a>  
                     <div class="header__top-right">
-                        <a href="#">
+                        <a href="#" class="header__search">
                             <img src="images/main/search.svg"/>
                         </a>
                         <a href="#">
@@ -135,6 +136,33 @@
                 </nav>
             </div>
         </div>
+
+        <div class="header-mobile-nav">
+            <div class="header-mobile-nav-top">
+                <img src="images/main/header-close.svg"/>
+            </div>
+            <div class="header-mobile-nav-body">
+                <ul>
+                   <li><a href="#">Украшения</a></li>
+                   <li><a href="#">аксессуары для волос</a></li>
+                   <li><a href="#">Коллекции</a></li>
+                   <li><a href="#">О компании</a></li>
+                   <li><a href="#">Контакты</a></li>
+                   <li><a href="#">Оплата и доставка</a></li>
+                </ul>
+            </div>
+            <div class="header-mobile-nav-footer">
+                <ul>
+                    <li>
+                        <a href="#"><img src="images/main/favorites.svg"/><span>Избранное</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="images/main/search-Bold.svg"/><span>Поиск</span></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
           
        
       
@@ -144,6 +172,7 @@
        <div class="crumbs">
             <ul>
                 <li>
+                    <a href="#" class="crumbs__home"><img  src="images/home.svg"/></a>
                     <a href="#">Главная</a>
                 </li>
                 <li>
@@ -194,17 +223,59 @@
                             <a href="#">Оплата и доставка</a>
                         </li>
                     </ul>
+
+                    <div class="footer-accordion">
+                        <div class="footer-accordion__top">
+                            <div class="footer-accordion__title">Каталог</div>
+                            <div class="footer-accordion__icon"><img src="images/main/plus.svg"/></div>
+                        </div>
+                        <div class="footer-accordion__content">
+                            <ul>
+                                <li>
+                                    <a href="#">Украшения</a>
+                                </li>
+                                <li>
+                                    <a href="#">Аксессуары для волос</a>
+                                </li>
+                                <li>
+                                    <a href="#">Коллекции</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer__column-question">
                     <div class="footer__column-question-title">
-                        Нужна <br/> консультация?
+                        Нужна консультация?
                     </div>
                     <a href="#" class="footer__column-more">
                         Задать вопрос
                        
                     </a>
+
+
                 </div>
-                <div class="footer__column-catalog"><div class="footer__column-title">Каталог</div>
+                <div class="footer__column-catalog">
+                    <div class="footer-accordion">
+                        <div class="footer-accordion__top">
+                            <div class="footer-accordion__title">Информация</div>
+                            <div class="footer-accordion__icon"><img src="images/main/plus.svg"/></div>
+                        </div>
+                        <div class="footer-accordion__content">
+                            <ul>
+                                <li>
+                                    <a href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата и доставка</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__column-title">Каталог</div>
                 <ul class="footer-menu">
                     <li>
                         <a href="#">Украшения</a>

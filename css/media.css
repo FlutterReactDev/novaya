@@ -1,0 +1,609 @@
+@media screen and (max-width:900px) {
+    .header__hamburger {
+        cursor: pointer;
+        visibility: visible;
+        pointer-events: auto;
+        opacity: 1;
+    }
+    .header__menu {
+        display: none;
+    }
+    .header__slider-item-title {
+        font-size: 52px;
+    }
+    .products-type__item-info {
+        width: 40%;
+    }
+    .products-type__item-title {
+        font-size: 30px;
+    }
+    .recommends__products {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+    .about__inner {
+        flex-direction: column-reverse;
+    }
+    .about__info {
+        width: 100%;
+    }
+    .about__img  {
+        width: 100%;
+    }
+    .footer__column-question-title {
+        font-size: 30px;
+    }
+    .advantages__list {
+        flex-wrap: wrap;
+    }
+    .footer__bottom {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 22px 100px;
+        gap:12px;
+    }
+
+
+
+    /*catalog page*/
+
+    .catalog__inner {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6, 328px);
+    }
+
+
+    /*products*/
+    .products__inner {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+    /*about*/
+
+    .material__inner {
+        flex-direction:column;
+    }
+    .material__info {
+        width: 100%;
+
+    }
+    .material__img {
+        width: 100%;
+    }
+    .delivery__steps {
+        flex-direction: column;
+    }
+    .delivery__ways-inner {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .map__img {
+        height: 300px;
+    }
+    .collection__inner {
+        grid-template-columns: 1fr;
+    }
+    .collection__item-title {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .recommends {
+        margin-top: 32px;
+        margin-bottom: 50px;
+    }
+    .header__top-nav {
+        align-items: center;
+    }
+    .header__search {
+        display: none;
+    }
+    .header__logo img{
+        width: 150px;
+        max-width: none;
+    }
+    .header__slider-item-title {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .products-type__item {
+        height: 167px;
+    }
+
+    .products-type__item-title {
+        font-size: 18px;
+    }
+    .products-type__item-info {
+        width: 50%;
+    }
+
+    .products-type__item-info-wrapper a {
+        font-size: 12px;
+    }
+
+    .recommends__title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+   .recommends__products-mobile {
+    display: block;
+    
+   }
+ .card {
+    border-radius: 0;
+   }
+   .recommends__products-mobile .slick-slide {
+    margin: 0 8px;
+   }
+   .recommends__products {
+    display: none;
+
+   }
+   .recommends__products-mobile .slick-dots li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+   }
+   .recommends__products-mobile .slick-dots li button{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius: 50%;
+   }
+   .recommends__products-mobile .slick-dots li.slick-active button{
+    background: #785D4C;
+   }
+   .recommends__products-mobile .slick-dots li button::before {
+    display: none;
+   }
+   .card__title {
+    font-size: 14px;
+    margin-top: 12px;
+   }
+   .card__colors div{
+    width: 12px;
+    height: 12px;
+   }
+   .card__footer > div:first-child {
+    display: none;
+   }
+   .card__footer {
+    grid-template-columns:1fr 1fr;
+    padding: 0 8px;
+   }
+   .card__prices {
+    flex-direction: column;
+    gap: 0;
+    text-align: left;
+   }
+   .card__prices-old {
+    font-size: 14px;
+   }
+   .card__prices-new {
+    font-size: 16px;
+   }
+   .card__cart img {
+    width: 32px;
+   }
+   .card__cart {
+    justify-self: end;
+    align-self: center;
+   }
+   .advantages {
+    padding: 56px 16px;
+   }
+   .advantages__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+   }
+   .advantages__item {
+    flex-direction: column;
+    gap: 12px;
+    
+   }
+   .advantages__item-text {
+    text-align: center;
+   }
+
+   .advantages__list:not(:last-child) {
+    margin-bottom: 16px;
+   }
+
+   .advantages__title {
+    font-size: 28px;
+   }
+   .about__info-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+   }
+
+   .about__info-text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
+   }
+   .about__info {
+    padding: 32px 16px;
+   }
+   .about__info-more {
+    font-size: 12px;
+   }
+   .about__img {
+    height: 220px;
+   }
+   .footer__column-question {
+    margin-bottom: 24px;
+   }
+   .footer__column-question-title {
+    font-size: 18px;
+   }
+   .footer__column-more {
+    font-size: 14px;
+    padding-right: 40px;
+    margin-top: 5px;
+   }
+   .footer__column-more:after {
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    top: 2px;
+   }
+   .footer__column-question  {
+    grid-area: first;
+   }
+   .footer__column-catalog {
+    grid-area: second;
+   }
+   .footer__column-information {
+    grid-area: third;
+   }
+   .footer__columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "first"
+    "second"
+    "third";
+   }
+   .footer__columns div {
+    justify-self: start;
+    width: 100%;
+   }
+   .footer-top {
+    padding: 40px 16px;
+   }
+   .footer__column-title {
+    display: none;
+   }
+   .footer-menu {
+    display: none;
+   }
+   .footer-accordion {
+    display: block;
+   }
+   .footer__bottom {
+    padding: 20px 16px;
+    
+   }
+   .footer__bottom-item {
+    color: #F4F2ED;
+    font-size: 12px;
+   }
+   .footer__logo img {
+    width: 194px;
+   }
+
+
+
+
+
+   /*catalog*/
+   .catalog {
+    margin-top: 16px;
+   }
+   .catalog__inner {
+      grid-template-columns:1fr;
+      grid-template-rows: repeat(6, 160px);
+    }
+    .catalog__item-title {
+        font-size: 32px;
+        bottom: 12px;
+        left: 12px;
+    }
+
+
+    /*products page*/
+    .products__fitler-left {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .products__fitler-dropdown-title {
+        font-weight: 700;
+    }
+    .products__fitler-dropdown {
+        width: 100%;
+    }
+    .products__fitler-selected {
+        margin: 0;
+    }
+    .products__fitler {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .products__fitler-dropdown {
+        margin-bottom: 8px;
+    }
+    .products__fitler-right {
+        margin-top: 12px;
+    }
+    /*catalog*/
+  
+
+    /*products*/
+    .products__fitler {
+        margin-bottom: 20px;
+    }
+    .products__inner {
+        grid-template-columns:1fr 1fr;
+    }
+
+    /*about*/
+    .company .about__info {
+        padding: 0 16px;
+    padding-bottom: 32px;
+    }
+    .about__info-text {
+        margin-bottom: 0;
+    }
+    .company .about__img {
+        height: 300px;
+    }
+    .material__info {
+        padding: 32px 16px;
+    }
+    .material__info-text p:last-child {
+        margin-bottom: 0;
+    }
+    .material__info-text p {
+        font-size: 18px;
+    }
+    .material__info-title {
+        font-size: 28px;
+    }
+    .material__info-title {
+        margin-bottom: 24px;
+    }
+    .material__img img {
+        height: 360px;
+    }
+
+    .contact__top-title {
+        font-size: 28px;
+        
+    }.contact__top-text {
+        font-size: 18px;
+    }
+    .contact__top-info-whatsapp-mobile {
+        margin-top: 8px;
+    }
+    .contact__top-info,.contact__top-info-whatsapp-mobile,.contact__top-info-whatsapp-mobile a {
+        font-size: 18px;
+    } 
+    .contact__top-info-whatsapp-mobile img {
+        width: 24px;
+    }
+    .delivery__steps {
+        gap: 24px;
+    }
+    .delivery__ways {
+        margin-top: 24px;
+    }
+    .margin-top {
+        margin-top: 24px;
+    }
+    .delivery__title {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .delivery {
+        margin-top: 24px;
+    }
+    .delivery__step-title {
+        font-size: 24px;
+    }
+    .delivery__ways-title {
+        font-size: 24px;
+    }
+    .delivery__way {
+        padding: 24px;
+    }
+    .delivery__way-header-title {
+        font-size: 18px;
+    }
+    .delivery__way-advantages li {
+        font-size: 14px;
+    }
+    .collection__title {
+        font-size: 28px;
+    }
+    .collection__item-footer {
+        grid-template-columns: 1fr 7fr 1fr;
+    }
+    .cabinet__title {
+        font-size: 28px;
+    }
+    .cabinet {
+        margin-top: 45px;
+    }
+    .form__group {
+        flex-direction: column;
+        margin-bottom: 26px;
+    }
+    .form__btn {max-width: 100%;width: 100%;}
+    .cabinet__form-quit {
+        display: block;
+        text-align: center;
+    }
+
+    .modal-content p {
+        margin-bottom: 24px;
+    }
+    .modal-body {
+        padding: 0 24px 24px 24px ;
+    }
+    .modal__form input {
+        margin-bottom: 26px;
+    }
+    .input-password input {
+        margin-bottom: 0;
+    }
+    .modal__form .checkboxes label {
+        font-size: 12px;
+    }
+    .modal__form .checkboxes {
+        margin-top: 26px;
+    }
+    .product__image-view {
+        flex-direction: column-reverse;
+    }
+ 
+    .product__image-view-images {
+        flex-direction: row;
+    }
+    .product__description-title {
+        font-size: 24px;
+    }
+    .product__description-prices-new,.product__description-prices-old,.product__description-prices-discount {
+        font-size: 20px;
+    }
+    .product__description-prices {
+        gap: 20px;
+    }
+    .product__description-config {
+        gap: 22px;
+    }
+    .product__description-add {
+        width: 100%;
+        max-width: 100%;
+    }
+    .product__description {
+        margin-top: 32px;
+    }
+    .complete__title {
+        font-size: 28px;
+    }
+    .card__prices {
+        justify-self: auto;
+    }
+
+    .complete__products  .slick-dots li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 6px;
+       }
+       .complete__products  .slick-dots li button{
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        border-radius: 50%;
+       }
+       .complete__products  .slick-dots li.slick-active button{
+        background: #785D4C;
+       }
+       .complete__products  .slick-dots li button::before {
+        display: none;
+       }
+       .crumbs__home {
+        display: block;
+       }
+       .crumbs__home ~ a {
+        display: none;
+       }
+       .crumbs li a {
+        font-size: 12px;
+       }
+       .crumbs li {
+        font-size: 12px;
+       }
+       .complete {
+        padding: 0;
+       }
+       .cart__title {
+        font-size: 28px;
+       }
+       .product__description-prices {
+        margin-bottom: 40px;
+       }
+       .product__description-config {
+        margin-bottom: 40px;
+       }
+       .products__inner {
+        padding: 0 16px;
+       }
+       .card__favorite {
+        display: block;
+       }
+       .product__image-view-main {
+        display: none;
+      }
+      .product__image-view-main-mobile {
+        display: block;
+      }
+}
+
+
+@media screen and (max-width:991px) {
+    .product {
+        display: block;
+    }
+    .product__description {
+        padding: 0;
+    }
+    .product__image-view-main-mobile  .slick-dots li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin: 0 6px;
+       }
+       .product__image-view-main-mobile  .slick-dots li button{
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+        border-radius: 50%;
+       }
+       .product__image-view-main-mobile  .slick-dots li.slick-active button{
+        background: #785D4C;
+       }
+       .product__image-view-main-mobile  .slick-dots li button::before {
+        display: none;
+       }
+}
+
+@media screen and (max-width:1200px) {
+    .contact__top {
+        grid-template-columns:1fr;
+    }
+   .contact__top-text {
+    align-self: auto;
+    justify-self: auto;
+   }
+   .contact__top-info {
+    justify-self: auto;
+   }
+   .contact__top-title {
+    margin-bottom: 24px;
+}
+.contact__top-text {
+    margin-bottom: 32px;
+}
+.contact__top-info-whatsapp-mobile {
+    display: flex;
+    gap: 12px;
+}
+.contact__top-info-phone,.contact__top-info-whatsapp {
+    display: none;
+}
+}
