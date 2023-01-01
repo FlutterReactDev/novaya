@@ -672,6 +672,12 @@ body.is-open {
   
   position: relative;
 }
+.products__fitler-dropdown.open .products__fitler-dropdown-arrow {
+  transform: rotate(180deg);
+}
+.products__fitler-dropdown-arrow {
+  transition: all 0.2s;
+}
 .products__fitler-dropdown.open {
   box-shadow: 0px 2px 10px rgba(79, 73, 69, 0.15);
 }
@@ -862,6 +868,14 @@ margin-bottom: 16px;
   display: block;
   
 }
+
+.input-visible {
+  display: block;
+}
+
+.input-unvisible {
+  display: none;
+}
 .product__description-color-types-item:hover {
   border: 1px solid #785D4C;
   border-radius: 6px;
@@ -895,8 +909,12 @@ border-radius: 6px;
   cursor: pointer;
   font-size: 16px;
   margin-bottom: 52px;
+  transition: 0.3s all;
 }
-
+.product__description-add:hover {
+  color: #F4F2ED;
+  background: #785D4C;
+}
 .product__description-consist {
   display: flex;
   gap: 56px ;
@@ -904,7 +922,9 @@ border-radius: 6px;
 .product__description-consist-names-name {
   color: #AAA49E;
 }
-
+.products__fitler-dropdown-title {
+  font-weight: 700;
+}
 .product__description-consist-names-name:not(:last-child),.product__description-consist-desctiption-text:not(:last-child) {
   margin-bottom: 12px;
 } 

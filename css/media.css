@@ -319,9 +319,7 @@
         align-items: flex-start;
         width: 100%;
     }
-    .products__fitler-dropdown-title {
-        font-weight: 700;
-    }
+ 
     .products__fitler-dropdown {
         width: 100%;
     }

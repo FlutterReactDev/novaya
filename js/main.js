@@ -11,7 +11,7 @@ $(document).ready(function () {
   $(".product__image-view-main-mobile").slick({
     arrows: true,
     infinite: false,
-    dots:true,
+    dots: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -130,8 +130,20 @@ $(document).ready(function () {
     let stateInput = $(".input-password input").attr("type");
     if (stateInput == "text") {
       $(".input-password input").attr("type", "password");
+      $(".input-visible").css({
+        display: "block",
+      });
+      $(".input-unvisible").css({
+        display: "none",
+      });
     } else {
       $(".input-password input").attr("type", "text");
+      $(".input-visible").css({
+        display: "none",
+      });
+      $(".input-unvisible").css({
+        display: "block",
+      });
     }
   });
 
